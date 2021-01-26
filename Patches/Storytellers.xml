@@ -23,14 +23,14 @@
 					<storytellerThreat />
 				</value>
 			</li>
-			<!-- Finally, apply the damage - I want this to be a mod option -->
+			<!-- Finally, apply the damage - I want this to be a mod option scale of 0.10-5.00 -->
 			<li Class="PatchOperationAdd"> 
 				<xpath>/Defs/StorytellerDef/modExtensions/li[@Class="VanillaStorytellersExpanded.StorytellerDefExtension"]/storytellerThreat[not(allDamagesMultiplier)]</xpath>
 				<value>
 					<allDamagesMultiplier>2</allDamagesMultiplier>
 				</value>
 			</li>
-			<!-- Disable threats at 1 pop - I want this to be a mod option -->
+			<!-- Disable threats at 1 pop - I want this to be a mod option scale of 0-99 -->
 			<li Class="PatchOperationAdd"> 
 				<xpath>/Defs/StorytellerDef/modExtensions/li[@Class="VanillaStorytellersExpanded.StorytellerDefExtension"]/storytellerThreat[not(disableThreatsAtPopulationCount)]</xpath>
 				<value>
