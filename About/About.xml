@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>[KYD] Igor Raid Mechanics for All</name>
+	<author>Kayedon, Taranchuk</author>
+	<packageId>KYD.StorytellerDamage</packageId>
+	<supportedVersions>
+	  <li>1.2</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadBefore/>
+	<loadAfter/>
+	<incompatibleWith/>	
+	
+	<description>Uses Vanilla Framework Expanded code to double the damage for all storytellers, just like how Igor Invader does it!
+	
+Additionally adds reinforcements upon losses, and grants boons upon defeating raiders!</description>
+</ModMetaData>
