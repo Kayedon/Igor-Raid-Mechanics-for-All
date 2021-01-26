@@ -34,7 +34,7 @@
 			<li Class="PatchOperationAdd"> 
 				<xpath>/Defs/StorytellerDef/modExtensions/li[@Class="VanillaStorytellersExpanded.StorytellerDefExtension"]/storytellerThreat[not(disableThreatsAtPopulationCount)]</xpath>
 				<value>
-					<disableThreatsAtPopulationCount>2</disableThreatsAtPopulationCount>
+					<disableThreatsAtPopulationCount>1</disableThreatsAtPopulationCount>
 				</value>
 			</li>
 			<!-- Defines what can trigger upon beating a raid - possible to add mod options to choose more events/disable events? -->
