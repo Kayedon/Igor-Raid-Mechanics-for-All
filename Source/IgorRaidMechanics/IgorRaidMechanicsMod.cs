@@ -44,19 +44,7 @@ namespace IgorRaidMechanics
             {
                 IgorRaidMechanicsMod.settings.damageMultiplier = 2f;
                 IgorRaidMechanicsMod.settings.disableThreatsAtPopulationCount = 1;
-                IgorRaidMechanicsMod.settings.goodIncidents = new List<string>
-                {
-                    "ResourcePodCrash",
-                    "PsychicSoothe",
-                    "SelfTame",
-                    "AmbrosiaSprout",
-                    "FarmAnimalsWanderIn",
-                    "WandererJoin",
-                    "RefugeePodCrash",
-                    "ThrumboPasses",
-                    "MeteoriteImpact",
-                    "WildManWandersIn"
-                };
+                IgorRaidMechanicsMod.settings.goodIncidents = IgorRaidMechanicsMod.settings.baseGoodIncidents.ListFullCopy();
                 IgorRaidMechanicsMod.settings.firstTimeInit = false;
             }
 

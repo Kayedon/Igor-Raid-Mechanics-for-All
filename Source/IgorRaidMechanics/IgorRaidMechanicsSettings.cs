@@ -17,6 +17,20 @@ namespace IgorRaidMechanics
         public int disableThreatsAtPopulationCount;
         public List<string> goodIncidents = new List<string>();
         public bool firstTimeInit = true;
+
+        public List<string> baseGoodIncidents = new List<string>
+        {
+            "ResourcePodCrash",
+            "PsychicSoothe",
+            "SelfTame",
+            "AmbrosiaSprout",
+            "FarmAnimalsWanderIn",
+            "WandererJoin",
+            "RefugeePodCrash",
+            "ThrumboPasses",
+            "MeteoriteImpact",
+            "WildManWandersIn"
+        };
         public override void ExposeData()
         {
             base.ExposeData();
@@ -28,7 +42,8 @@ namespace IgorRaidMechanics
 
         public void DoSettingsWindowContents(Rect inRect)
         {
-            var goodIncidentsLocal = goodIncidents.Where(x => DefDatabase<IncidentDef>.GetNamed(x) != null).OrderBy(x => DefDatabase<IncidentDef>.GetNamed(x).label).ToList();
+            var goodIncidentsLocal = goodIncidents.Where(x => DefDatabase<IncidentDef>.GetNamed(x) != null).OrderBy(x => DefDatabase<IncidentDef>.GetNamed(x).label).ToHashSet();
+            goodIncidentsLocal.AddRange(baseGoodIncidents);
             var allIncidents = DefDatabase<IncidentDef>.AllDefs.Where(x => !goodIncidents.Contains(x.defName)).OrderBy(x => x.label).ToList();
             Rect rect = new Rect(inRect.x, inRect.y, inRect.width, inRect.height);
             Rect rect2 = new Rect(0f, 0f, inRect.width - 30f, 180 + (goodIncidentsLocal.Count * 24) + (allIncidents.Count * 24));
@@ -46,11 +61,15 @@ namespace IgorRaidMechanics
             listingStandard.GapLine();
             foreach (var incident in goodIncidentsLocal)
             {
-                bool test = true;
+                bool test = goodIncidents.Contains(incident);
                 listingStandard.CheckboxLabeled(DefDatabase<IncidentDef>.GetNamed(incident).label, ref test);
                 if (!test)
                 {
                     goodIncidents.Remove(incident);
+                }
+                else if (!goodIncidents.Contains(incident))
+                {
+                    goodIncidents.Add(incident);
                 }
             }
             listingStandard.Gap();
