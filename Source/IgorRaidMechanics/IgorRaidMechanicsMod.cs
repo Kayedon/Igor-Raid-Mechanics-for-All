@@ -22,7 +22,7 @@ namespace IgorRaidMechanics
 
         public override string SettingsCategory()
         {
-            return "[KYD] Igor Raid Mechanics for All";
+            return "[KYD] Igor Raid Mechanics for All Storytellers";
         }
 
         public override void WriteSettings()
