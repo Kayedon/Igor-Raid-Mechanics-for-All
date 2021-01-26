@@ -1,0 +1,6 @@
+c:\GAMES\Rimworld\Mods\Igor-Raid-Mechanics-for-All\Assemblies\IgorRaidMechanics.dll
+c:\GAMES\Rimworld\Mods\Igor-Raid-Mechanics-for-All\Assemblies\IgorRaidMechanics.pdb
+c:\GAMES\Rimworld\Mods\Igor-Raid-Mechanics-for-All\Source\IgorRaidMechanics\obj\Debug\IgorRaidMechanics.csprojAssemblyReference.cache
+c:\GAMES\Rimworld\Mods\Igor-Raid-Mechanics-for-All\Source\IgorRaidMechanics\obj\Debug\IgorRaidMechanics.csproj.CoreCompileInputs.cache
+c:\GAMES\Rimworld\Mods\Igor-Raid-Mechanics-for-All\Source\IgorRaidMechanics\obj\Debug\IgorRaidMechanics.dll
+c:\GAMES\Rimworld\Mods\Igor-Raid-Mechanics-for-All\Source\IgorRaidMechanics\obj\Debug\IgorRaidMechanics.pdb
