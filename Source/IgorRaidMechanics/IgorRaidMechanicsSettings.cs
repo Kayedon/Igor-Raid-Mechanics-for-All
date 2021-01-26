@@ -31,7 +31,7 @@ namespace IgorRaidMechanics
             var goodIncidentsLocal = goodIncidents.Where(x => DefDatabase<IncidentDef>.GetNamed(x) != null).OrderBy(x => DefDatabase<IncidentDef>.GetNamed(x).label).ToList();
             var allIncidents = DefDatabase<IncidentDef>.AllDefs.Where(x => !goodIncidents.Contains(x.defName)).OrderBy(x => x.label).ToList();
             Rect rect = new Rect(inRect.x, inRect.y, inRect.width, inRect.height);
-            Rect rect2 = new Rect(0f, 0f, inRect.width - 30f, 200 + (goodIncidentsLocal.Count * 24) + (allIncidents.Count * 24));
+            Rect rect2 = new Rect(0f, 0f, inRect.width - 30f, 180 + (goodIncidentsLocal.Count * 24) + (allIncidents.Count * 24));
             Widgets.BeginScrollView(rect, ref scrollPosition, rect2, true);
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(rect2);
