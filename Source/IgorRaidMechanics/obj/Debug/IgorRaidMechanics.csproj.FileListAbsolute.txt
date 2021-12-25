@@ -4,3 +4,9 @@ c:\GAMES\Rimworld\Mods\Igor-Raid-Mechanics-for-All\Source\IgorRaidMechanics\obj\
 c:\GAMES\Rimworld\Mods\Igor-Raid-Mechanics-for-All\Source\IgorRaidMechanics\obj\Debug\IgorRaidMechanics.csproj.CoreCompileInputs.cache
 c:\GAMES\Rimworld\Mods\Igor-Raid-Mechanics-for-All\Source\IgorRaidMechanics\obj\Debug\IgorRaidMechanics.dll
 c:\GAMES\Rimworld\Mods\Igor-Raid-Mechanics-for-All\Source\IgorRaidMechanics\obj\Debug\IgorRaidMechanics.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Igor-Raid-Mechanics-for-All\Assemblies\IgorRaidMechanics.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Igor-Raid-Mechanics-for-All\Assemblies\IgorRaidMechanics.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Igor-Raid-Mechanics-for-All\Source\IgorRaidMechanics\obj\Debug\IgorRaidMechanics.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Igor-Raid-Mechanics-for-All\Source\IgorRaidMechanics\obj\Debug\IgorRaidMechanics.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Igor-Raid-Mechanics-for-All\Source\IgorRaidMechanics\obj\Debug\IgorRaidMechanics.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Igor-Raid-Mechanics-for-All\Source\IgorRaidMechanics\obj\Debug\IgorRaidMechanics.pdb

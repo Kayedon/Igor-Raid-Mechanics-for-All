@@ -40,6 +40,7 @@ namespace IgorRaidMechanics
             Scribe_Values.Look(ref damageMultiplier, "damageMultiplier");
             Scribe_Values.Look(ref disableThreatsAtPopulationCount, "disableThreatsAtPopulationCount");
             Scribe_Values.Look(ref raidWarningInterval, "raidWarningInterval");
+            Scribe_Values.Look(ref enableRaidWarning, "enableRaidWarning");
             Scribe_Collections.Look(ref goodIncidents, "goodIncidents");
         }
 
