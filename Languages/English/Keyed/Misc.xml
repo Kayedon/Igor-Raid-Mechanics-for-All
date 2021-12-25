@@ -3,6 +3,8 @@
 
 	<Igor.AdjustDamageMultiplier>Adjust damage multiplier: </Igor.AdjustDamageMultiplier>
 	<Igor.AdjustMinPopulationForThreats>Adjust minimum population for threats: </Igor.AdjustMinPopulationForThreats>
+	<Igor.AdjustRaidWarningInterval>Adjust raid warning interval: </Igor.AdjustRaidWarningInterval>
 	<Igor.PickGoodIncidentToFire>Pick incidents to fire: </Igor.PickGoodIncidentToFire>
+	<Igor.EnableRaidWarning>Enable raid warning: </Igor.EnableRaidWarning>
 	
 </LanguageData>

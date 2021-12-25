@@ -17,6 +17,8 @@ namespace IgorRaidMechanics
         public int disableThreatsAtPopulationCount;
         public List<string> goodIncidents = new List<string>();
         public bool firstTimeInit = true;
+        public bool enableRaidWarning;
+        public int raidWarningInterval;
 
         public List<string> baseGoodIncidents = new List<string>
         {
@@ -37,6 +39,7 @@ namespace IgorRaidMechanics
             Scribe_Values.Look(ref firstTimeInit, "firstTimeInit");
             Scribe_Values.Look(ref damageMultiplier, "damageMultiplier");
             Scribe_Values.Look(ref disableThreatsAtPopulationCount, "disableThreatsAtPopulationCount");
+            Scribe_Values.Look(ref raidWarningInterval, "raidWarningInterval");
             Scribe_Collections.Look(ref goodIncidents, "goodIncidents");
         }
 
@@ -46,7 +49,7 @@ namespace IgorRaidMechanics
             goodIncidentsLocal.AddRange(baseGoodIncidents);
             var allIncidents = DefDatabase<IncidentDef>.AllDefs.Where(x => !goodIncidents.Contains(x.defName)).OrderBy(x => x.label).ToList();
             Rect rect = new Rect(inRect.x, inRect.y, inRect.width, inRect.height);
-            Rect rect2 = new Rect(0f, 0f, inRect.width - 30f, 180 + (goodIncidentsLocal.Count * 24) + (allIncidents.Count * 24));
+            Rect rect2 = new Rect(0f, 0f, inRect.width - 30f, 280 + (goodIncidentsLocal.Count * 24) + (allIncidents.Count * 24));
             Widgets.BeginScrollView(rect, ref scrollPosition, rect2, true);
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(rect2);
@@ -57,6 +60,11 @@ namespace IgorRaidMechanics
             }
             listingStandard.SliderLabeled("Igor.AdjustDamageMultiplier".Translate(), ref damageMultiplier, damageMultiplier.ToStringDecimalIfSmall(), 0.1f, 5f);
             listingStandard.SliderLabeled("Igor.AdjustMinPopulationForThreats".Translate(), ref disableThreatsAtPopulationCount, disableThreatsAtPopulationCount.ToString(), 0, 99);
+            listingStandard.CheckboxLabeled("Igor.EnableRaidWarning".Translate(), ref enableRaidWarning);
+            if (enableRaidWarning)
+            {
+                listingStandard.SliderLabeled("Igor.AdjustRaidWarningInterval".Translate(), ref raidWarningInterval, raidWarningInterval.ToString(), 0, 24);
+            }
             listingStandard.Label("Igor.PickGoodIncidentToFire".Translate());
             listingStandard.GapLine();
             foreach (var incident in goodIncidentsLocal)

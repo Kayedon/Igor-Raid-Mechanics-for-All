@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-	<name>[KYD] Igor Raid Mechanics for All</name>
+	<name>[KYD] Igor Raid Mechanics for All Storytellers</name>
 	<author>Kayedon, Taranchuk</author>
-	<packageId>KYD.IgorRaidMechanics</packageId>
+	<packageId>KYD.StorytellerDamage</packageId>
 	<supportedVersions>
 	  <li>1.2</li>
-	  <li>1.3</li>
 	</supportedVersions>
 	<modDependencies>
 		<li>
@@ -19,10 +18,7 @@
 	<loadAfter/>
 	<incompatibleWith/>	
 	
-	<description>Adds the raid mechanics from Igor Invader to all storytellers.
+	<description>Uses Vanilla Framework Expanded code to double the damage for all storytellers, just like how Igor Invader does it!
 	
-Damage is multiplied by a set value.
-Threats don't fire under a chosen population threshold.
-Losing pawns in a raid triggers reinforcements.
-Beating a raid triggers user-defined events.</description>
+Additionally adds reinforcements upon losses, and grants boons upon defeating raiders!</description>
 </ModMetaData>

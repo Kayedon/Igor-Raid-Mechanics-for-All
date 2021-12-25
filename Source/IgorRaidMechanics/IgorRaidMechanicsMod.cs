@@ -46,6 +46,7 @@ namespace IgorRaidMechanics
                 IgorRaidMechanicsMod.settings.disableThreatsAtPopulationCount = 1;
                 IgorRaidMechanicsMod.settings.goodIncidents = IgorRaidMechanicsMod.settings.baseGoodIncidents.ListFullCopy();
                 IgorRaidMechanicsMod.settings.firstTimeInit = false;
+                IgorRaidMechanicsMod.settings.enableRaidWarning = false;
             }
 
             foreach (var storytellerDef in DefDatabase<StorytellerDef>.AllDefs)
@@ -68,6 +69,15 @@ namespace IgorRaidMechanics
             modExtension.storytellerThreat.allDamagesMultiplier = IgorRaidMechanicsMod.settings.damageMultiplier;
             modExtension.storytellerThreat.disableThreatsAtPopulationCount = IgorRaidMechanicsMod.settings.disableThreatsAtPopulationCount;
             modExtension.storytellerThreat.goodIncidents = IgorRaidMechanicsMod.settings.goodIncidents;
+            if (IgorRaidMechanicsMod.settings.enableRaidWarning)
+            {
+                var hour = IgorRaidMechanicsMod.settings.raidWarningInterval * 2500;
+                modExtension.storytellerThreat.raidWarningRange = new IntRange(hour, hour);
+            }
+            else
+            {
+                modExtension.storytellerThreat.raidWarningRange = null;
+            }
         }
     }
 }
